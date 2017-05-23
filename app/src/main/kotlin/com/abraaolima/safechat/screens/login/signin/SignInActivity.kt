@@ -6,8 +6,12 @@ import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import com.abraaolima.safechat.R
 import com.abraaolima.safechat.databinding.ActivitySigninBinding
+import javax.inject.Inject
 
 class SignInActivity : AppCompatActivity() {
+
+    @Inject
+    lateinit var viewModel: SignInViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
