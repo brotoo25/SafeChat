@@ -1,8 +1,9 @@
-package com.abraaolima.safechat
+package com.abraaolima.safechat.screens.login.register
 
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.v7.app.AppCompatActivity
+import com.abraaolima.safechat.R
 
 class RegisterActivity : AppCompatActivity() {
 

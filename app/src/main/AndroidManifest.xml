@@ -25,7 +25,7 @@
         </activity>
 
         <activity
-            android:name="com.abraaolima.safechat.RegisterActivity"
+            android:name="com.abraaolima.safechat.screens.login.register.RegisterActivity"
             android:label="@string/register"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>

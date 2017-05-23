@@ -1,9 +1,10 @@
-package com.abraaolima.safechat
+package com.abraaolima.safechat.screens.login.signin
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
+import com.abraaolima.safechat.R
 import com.abraaolima.safechat.databinding.ActivitySigninBinding
 
 class SignInActivity : AppCompatActivity() {
