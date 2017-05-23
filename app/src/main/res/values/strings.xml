@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HiChat</string>
+    <string name="action_settings">Settings</string>
+    <string name="signin">Sign In</string>
+    <string name="register">Create account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+</resources>
