@@ -50,10 +50,11 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 
     // Firebase
-    compile 'com.firebaseui:firebase-ui:1.2.0'
-    compile 'com.firebaseui:firebase-ui-auth:1.2.0'
-    compile 'com.firebaseui:firebase-ui-storage:1.2.0'
-    compile 'com.firebaseui:firebase-ui-database:1.2.0'
+    compile 'com.google.firebase:firebase-core:10.2.6'
+    compile 'com.google.firebase:firebase-auth:10.2.6'
+    compile 'com.google.firebase:firebase-crash:10.2.6'
+    compile 'com.google.firebase:firebase-storage:10.2.6'
+    compile 'com.google.firebase:firebase-database:10.2.6'
 
     // Tools
     kapt "com.android.databinding:compiler:2.3.0"
