@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".SafeChatApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,7 +15,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.abraaolima.safechat.SignInActivity"
+            android:name=".screens.login.signin.SignInActivity"
             android:label="@string/signin"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -25,7 +26,7 @@
         </activity>
 
         <activity
-            android:name="com.abraaolima.safechat.screens.login.register.RegisterActivity"
+            android:name=".screens.login.register.RegisterActivity"
             android:label="@string/register"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>
