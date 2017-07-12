@@ -8,13 +8,90 @@
     tools:context=".screens.login.register.RegisterActivity"
     tools:showIn="@layout/activity_register">
 
+    <Button
+        android:id="@+id/btn_register_enter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="64dp"
+        android:textColor="@color/white"
+        android:background="@color/black_transparent"
+        android:text="@string/register"
+        android:transitionName="@string/transition_login_enter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout_register_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout_register_email"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout_register_email"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_register_email">
+
+        <EditText
+            android:id="@+id/txt_register_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout_register_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:transitionName="@string/transition_login_email"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout_signin_password"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout_signin_password"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_signin_password">
+
+        <EditText
+            android:id="@+id/txt_register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout_signin_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="64dp"
+        android:transitionName="@string/transition_login_password"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register_enter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/txt_signin_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
     <TextView
+        android:id="@+id/lbl_register_terms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:autoLink="web"
+        android:text="@string/terms_conditions"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </android.support.constraint.ConstraintLayout>

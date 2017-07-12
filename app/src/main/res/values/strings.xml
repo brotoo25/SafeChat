@@ -6,4 +6,13 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="forgot_your_password">Forgot your password?</string>
+    <string name="name">Name</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="transition_login_fab">transition_login_fab</string>
+    <string name="transition_login_content">transition_login_content</string>
+    <string name="transition_login_email">transition_login_email</string>
+    <string name="transition_login_password">transition_login_password</string>
+    <string name="transition_login_enter">transition_login_enter</string>
+    <string name="invalid_field">Invalid Field!</string>
+    <string name="pass_at_least_six_chars_long">At least 6 characteries</string>
 </resources>

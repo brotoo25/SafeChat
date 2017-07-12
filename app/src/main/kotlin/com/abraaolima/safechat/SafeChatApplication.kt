@@ -10,14 +10,12 @@ import com.abraaolima.safechat.dagger.DaggerAppComponent
  */
 class SafeChatApplication : Application() {
 
-    companion object {
-        lateinit var appComponent: AppComponent
-    }
+    val appComponent: AppComponent = DaggerAppComponent.builder()
+            .appModule(AppModule(this))
+            .build()
 
     override fun onCreate() {
         super.onCreate()
-        appComponent = DaggerAppComponent.builder()
-                .appModule(AppModule(this))
-                .build()
+
     }
 }

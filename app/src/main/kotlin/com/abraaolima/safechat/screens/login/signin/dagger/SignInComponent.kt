@@ -12,7 +12,7 @@ import javax.inject.Singleton
  */
 @Singleton
 @Component(modules = arrayOf(AppModule::class))
-interface AppComponent {
+interface SignInComponent {
 
     fun inject(signInActivity: SignInActivity)
     fun inject(signInViewModel: SignInViewModel)
